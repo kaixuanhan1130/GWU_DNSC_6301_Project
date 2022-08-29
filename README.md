@@ -3,7 +3,7 @@
 ### Basic Information
 
 * **Person or organization developing model**: Kaixuan Han, `ferryman1130@gmail.com`
-* **Model date**: August, 2021
+* **Model date**: August, 2022
 * **Model version**: 1.0
 * **License**: MIT
 * **Model implementation code**: [DNSC_6301_Project_Group5.ipynb](https://github.com/kaixuanhan1130/GWU_DNSC_6301_Project/blob/main/DNSC6301_project_group5.ipynb)
