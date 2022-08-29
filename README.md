@@ -134,7 +134,24 @@ The figure demonstrates the importance of the variables ranked by the importance
 
 The figure demonstrates that at the depth of 6, the Hispanic-to-White AIR is over 0.8, which means our model is free from data discrimination.
 
+### Ethical considerations
+* **Potential negative impacts of using the model**
+**i.Math or software problems** 
 
+(1)The model only consider one parameter(max_depth) of the DecisionTreeClassifier. Failure to consider other parameters might lead to a decrease in prediction accuracy.
 
+(2)Decision Tree does not perform well when dealing with data of large scale, especially with continuous independent variables. A potential improvement, which the project fails to implement, could be applying other models including random forest and neural network.
 
+**ii.Real-world risks** 
 
+The model used in the project generates the result that AUC is 0.7438 on test data, which might be unsatisfactory for particular companies whose business is highly sensitive to  debit and credit. A slight change on the precision of the model performance could result in huge shift of company’s profit.
+
+* **Potential uncertainties relating to the impacts of using your model**
+
+**i.Math or software problems**
+
+The model only consider 26 variables to evaluate one’s credit. With the development of big data technology, more kinds of data would be added to evaluate one’s credit. However, the model used in the project might not accommodate these new variables, which may lead to a decline on the performance of the model. Therefore, whether the model could perform well with potential varied datasets in the future is a major uncertainty, especially in the era of information explosion.
+
+**ii.Real-world risks** 
+
+Companies may benefit from model of good performance and therefore they are inclined to collect as much data as they can to improve the model, which might lead to data privacy issues such as data leaking and illegal data trading.
