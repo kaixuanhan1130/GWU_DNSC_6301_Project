@@ -150,7 +150,7 @@ The model used in the project generates the result that AUC is 0.7438 on test da
 
 **i.Math or software problems**
 
-The model only consider 26 variables to evaluate one’s credit. With the development of big data technology, more kinds of data would be added to evaluate one’s credit. However, the model used in the project might not accommodate these new variables, which may lead to a decline on the performance of the model. Therefore, whether the model could perform well with potential varied datasets in the future is a major uncertainty, especially in the era of information explosion.
+The model only consider 26 variables to evaluate one’s credit. With the development of big data technology, more kinds of data would be added to evaluate one’s credit. However, the model used in the project might not accommodate these new variables, which may lead to a decline in the performance of the model. Therefore, whether the model could perform well with potential varied datasets in the future is a major uncertainty, especially in the era of information explosion.
 
 **ii.Real-world risks** 
 
