@@ -98,7 +98,8 @@ Validation AUC - 074961
 Test AUC-0.7438
 Hispanic - White AIR - 0.833205
 ```
-* **plots related to the data or final model*
+* **plots related to the data or final model**
+
    **(1)Histogram of each column**
 ![下载](https://user-images.githubusercontent.com/112351745/187101797-7f2246ca-a6e2-4789-ac1e-c1ce7b5da4b3.png)
 
