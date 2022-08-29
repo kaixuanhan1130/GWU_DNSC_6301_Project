@@ -79,7 +79,6 @@ White proportion accepted: 0.568
 Asian proportion accepted: 0.568
 asian-to-white AIR: 1.00
 
-
 Male proportion accepted: 0.503
 Female proportion accepted: 0.533
 female-to-male AIR: 1.06
@@ -92,7 +91,7 @@ female-to-male AIR: 1.06
  
 * **Description of the final values**
 
-   **(1)Final Model Values**
+**(1)Final Model Values**
 ```
 Model with 6 Depths
 Training AUC - 0.783722
@@ -112,7 +111,7 @@ This figure demonstrates the distribution of each column which provides visualiz
 
 The figure demonstrates the correlation of each variable. Deeper the color is, more negatively related two variables are, ranging approximately in (-0.4,1). 
 
-   **(4)Iteration Plot for Depth vs Training and Validation AUC**
+   **(4)Iteration Plot of Training and Validation AUC**
    
 ![Tr Va AUC](https://user-images.githubusercontent.com/112351745/187102172-b8b07423-4abe-4d06-837b-8ee0463b6335.png)
 
@@ -136,6 +135,7 @@ The figure demonstrates that at the depth of 6, the Hispanic-to-White AIR is ove
 
 ### Ethical considerations
 * **Potential negative impacts of using the model**
+
 **i.Math or software problems** 
 
 (1)The model only consider one parameter(max_depth) of the DecisionTreeClassifier. Failure to consider other parameters might lead to a decrease in prediction accuracy.
@@ -145,6 +145,7 @@ The figure demonstrates that at the depth of 6, the Hispanic-to-White AIR is ove
 **ii.Real-world risks** 
 
 The model used in the project generates the result that AUC is 0.7438 on test data, which might be unsatisfactory for particular companies whose business is highly sensitive to  debit and credit. A slight change on the precision of the model performance could result in huge shift of company’s profit.
+
 
 * **Potential uncertainties relating to the impacts of using your model**
 
