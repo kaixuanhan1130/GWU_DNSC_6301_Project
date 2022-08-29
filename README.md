@@ -51,7 +51,7 @@
 * **Type of model**: Decision Tree 
 * **Software used to implement the model**: Python, scikit-learn
 * **Version of the modeling software**: 0.22.2.post1
-* **Hyperparameters or other settings of your model**: 
+* **Hyperparameters or other settings of the model**: 
 ```
 DecisionTreeClassifier(ccp_alpha=0.0, class_weight=None, criterion='gini',
                        max_depth=6, max_features=None, max_leaf_nodes=None,
@@ -91,7 +91,6 @@ female-to-male AIR: 1.06
  
 * **Description of the final values**
 
-**(1)Final Model Values**
 ```
 Model with 6 Depths
 Training AUC - 0.783722
@@ -99,35 +98,35 @@ Validation AUC - 074961
 Test AUC-0.7438
 Hispanic - White AIR - 0.833205
 ```
-
-   **(2)Histogram of each column**
+* **plots related to the data or final model*
+   **(1)Histogram of each column**
 ![下载](https://user-images.githubusercontent.com/112351745/187101797-7f2246ca-a6e2-4789-ac1e-c1ce7b5da4b3.png)
 
 This figure demonstrates the distribution of each column which provides visualized insights of features. For instance, in the sex column, ‘1’, ‘2’ refers to male and female and the y-axis refers to the number of each gender. Detailed information of variables in each figure are interpreted in Data Dictionary.
 
-   **(3)Correlation Heatmap of data**
+   **(2)Correlation Heatmap of data**
    
 ![heatmap](https://user-images.githubusercontent.com/112351745/187102023-2516ad4b-647f-496f-856f-22cf6e933590.png)
 
 The figure demonstrates the correlation of each variable. Deeper the color is, more negatively related two variables are, ranging approximately in (-0.4,1). 
 
-   **(4)Iteration Plot of Training and Validation AUC**
+   **(3)Iteration Plot of Training and Validation AUC**
    
 ![Tr Va AUC](https://user-images.githubusercontent.com/112351745/187102172-b8b07423-4abe-4d06-837b-8ee0463b6335.png)
 
 The figure demonstrates the AUC score of training and validation data. The AUC score represents how the model would performance in predicting unseen data. For training data, the AUC score increase with the depth of tree. For validation data, the AUC score first increases, reaches the top at the depth of 6 and then decreases. Therefore, the depth of 6 is chosen for the built of the best model.
 
-   **(5)Decision Tree for human interpretation**
+   **(4)Decision Tree for human interpretation**
    
 ![decision tree](https://user-images.githubusercontent.com/112351745/187102270-23f9c814-1bc8-4208-90c4-0d30c2bf0300.png)
 
-   **(6)Plot for variable Importance**
+   **(5)Plot for variable Importance**
 
 ![variable importance](https://user-images.githubusercontent.com/112351745/187102296-62e4fa8d-a38f-434f-8feb-772331d13009.png)
 
 The figure demonstrates the importance of the variables ranked by the importance. The importance of the variable refers to how it could influence on the prediction results. Therefore, the variables ranked higher in this figure is more crucial of determining eligibility for a credit line increase.
 
-   **(7)Final Iteration Plot with AIR**
+   **(6)Final Iteration Plot with AIR**
    
  ![3 AUC](https://user-images.githubusercontent.com/112351745/187102327-eed404a8-fc03-4edd-9689-323384e7e1c6.png)
 
