@@ -63,16 +63,36 @@ DecisionTreeClassifier(ccp_alpha=0.0, class_weight=None, criterion='gini',
 ### Quantitative Analysis
 * **Metrics used to evaluate final model - AUC and AIR**
 <img width="492" alt="截屏2022-08-29 08 13 03" src="https://user-images.githubusercontent.com/112351745/187100863-15ff36fb-a913-4ecb-bcc1-c5a08a1392db.png">
-From the table describing the AUC of training data and validation data, we choose the depth of 6 as the best model.
-Then we use AIR to evaluate whether there exists data discrimination. In the Bias Testing, we found that the value of hispanic-to-white is 0.76, which is lower than 0.8. In this case, there exists discrimination towards hispanic. (The result is shown in the following table)
+ From the table describing the AUC of training data and validation data, we choose the depth of 6 as the best model.<br>
+
+ Then we use AIR to evaluate whether there exists data discrimination. In the Bias Testing, we found that the value of hispanic-to-white is 0.76, which is lower than 0.8. In this case, there exists discrimination towards hispanic. (The result is shown in the following table)<br>
+```
+White proportion accepted: 0.568
+Hispanic proportion accepted: 0.434
+hispanic-to-white AIR: 0.76
+
+White proportion accepted: 0.568
+Black proportion accepted: 0.465
+black-to-white AIR: 0.82
+
+White proportion accepted: 0.568
+Asian proportion accepted: 0.568
+asian-to-white AIR: 1.00
 
 
+Male proportion accepted: 0.503
+Female proportion accepted: 0.533
+female-to-male AIR: 1.06
+```
+ Therefore, we need to do the bias remediation to improve the performance of the 	model. After the remediation, we get the final AIR Value.
+ 
+<img width="298" alt="截屏2022-08-29 08 23 57" src="https://user-images.githubusercontent.com/112351745/187101344-76bad964-eb79-4aef-8135-227844b3dd22.png">
 
-| Tr AUC | Val AUC | Test AUC |
-| ------ | ------- | -------- |
-| 0.3456 | 0.7891  | 0.7687 |
+ When the depth of tree is 6 which we select as the best model, the Hispanic-to-white AIR is 0.83>0.8, which is a satisfactory result. In conclusion, the depth of 6 is selected finally for the model.
+
+
 
 #### Correlation Heatmap
-![Correlation Heatmap](download.png)
+
 
 
